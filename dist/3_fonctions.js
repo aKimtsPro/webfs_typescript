@@ -5,7 +5,7 @@ function add(x, y) {
     return x + y;
 }
 console.log(add(2, 5));
-// console.log(add("salut", " cava?")) // erreur
+console.log(add("salut", " cava?"));
 // le type de retour
 function soustraction(x, y) {
     return x - y;
@@ -16,11 +16,12 @@ function saluer(salut) {
     console.log("bonjour, " + salut);
 }
 saluer("ca va?");
-function boucleInf() {
-    while (true) {
-    }
+function boucleInf(bool) {
+    while (bool)
+        ;
+    console.log("Terme naturel de la fonction");
 }
-//boucleInf();
+boucleInf(false);
 // parametre optionel
 // si une valeur n'est pas donnée au param optionnel, sa valeur sera undefined
 function salutOpt(nom, salut) {

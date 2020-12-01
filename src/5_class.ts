@@ -1,7 +1,7 @@
 abstract class Employe{
 
-    private _nom : string = "-";
-    private _age : number = 0;
+    private _nom : string;
+    private _age : number = 4;
     private _num_nat : number = 0;
     private readonly _salaire : number = 0;
 
@@ -27,7 +27,7 @@ abstract class Employe{
     }
     
     public get nom() : string {
-        return "this._nom";
+        return this._nom;
     }
     
     public set nom(v : string) {
@@ -50,7 +50,8 @@ abstract class Employe{
 // emp.salaire = 1500; // erreur, pas de set sur salaire
 
 
-class Cadre extends Employe{
+
+class Cadre extends Employe {
 
     private _bureau : string;
 

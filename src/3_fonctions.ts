@@ -9,7 +9,7 @@ function add(x,y){
 }
 
 console.log(add(2,5));
-// console.log(add("salut", " cava?")) // erreur
+console.log(add("salut", " cava?"));
 
 // le type de retour
 
@@ -21,18 +21,18 @@ function soustraction(x:number, y:number) : number {
 
 // void/never
 
-function saluer(salut : string) : void{
+function saluer(salut : string) : void {
     console.log("bonjour, " + salut);
 }
 
 saluer("ca va?");
 
-function boucleInf() : never {
-    while(true){
-    }
+function boucleInf(bool : boolean) : void | never {
+    while(bool);
+    console.log("Terme naturel de la fonction");
 }
 
-//boucleInf();
+boucleInf(false);
 
 // parametre optionel
 
@@ -80,7 +80,7 @@ vFunc = function(x,y){
     return x+y;
 }
 
-let vFunc2 = function(message:string){
+let vFunc2 = function(message:string): void{
     console.log(message);
 }
 

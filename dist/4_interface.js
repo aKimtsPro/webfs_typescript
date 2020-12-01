@@ -9,8 +9,6 @@ var vFunc3 = function (x) { console.log("scrounch"); };
 var obj = {
     nom: "luc",
     age: 15,
-    num_nat: 0,
-    manger: vFunc3 // pas de declaration de function dans la declaration d'objet // optionnel
 };
 var pers = obj;
 sePresenter(pers);

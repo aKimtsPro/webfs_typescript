@@ -1,3 +1,3 @@
 let salutation = "hello";
 
-console.log(salutation);
+console.log(salutation); 

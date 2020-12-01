@@ -22,7 +22,7 @@ console.log(chaine);
 // Array
 
 let tableauNbr : number[] = [1,2,3];
-let tab : Array<number> = [1,2,3];
+let tab : Array<number | string | boolean> = [1,2,3, "hello"];
 
 tab[0] = 5;
 

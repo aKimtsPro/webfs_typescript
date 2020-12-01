@@ -5,7 +5,7 @@ interface Personne{
     // adress : string = "rue truc", // pas de valeur par defaut
 
     manger?(nourriture:string): void, // method dans l'interface
-    //manger : (nourriture:string) => void
+    //manger?: (nourriture:string) => void
 }
 
 // a partir d'une personne on peut acceder à tous ses proprietes
@@ -19,17 +19,15 @@ function sePresenter(p : Personne){
 
 let vFunc3 = function(x:string){ console.log("scrounch")}
 
-let obj : Object = {
+let obj = {
     nom: "luc",
     age: 15,
-    num_nat : 0, // optionnel,
+    // num_nat : 0, // optionnel,
 
-    manger: vFunc3 // pas de declaration de function dans la declaration d'objet // optionnel
+    // manger: vFunc3 // pas de declaration de function dans la declaration d'objet // optionnel
 }
 
-
-
-let pers : Personne = obj as Personne;
+let pers : Personne = obj;
 
 sePresenter(pers);
 

@@ -2,6 +2,7 @@
 
 // le mot clef type permet de creer une variable local contenant un type
 
+// grace à l'opérateur '|' ou peut créer un type composé d'une 
 type valeurDes = 1 | 2 | 3 | 4 | 5 | 6;
 
 function lancerDes() : valeurDes {
@@ -23,7 +24,7 @@ creerEcran([1920, 1080], 24);
 
 type union = string | void; // string OU void
 
-function bateau(age :number) : union{
+function bateau(age :number) : union {
     if(age >= 18){
         console.log("majeur");
         return "Vous avez "+age+" ans.";

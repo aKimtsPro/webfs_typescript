@@ -10,7 +10,7 @@ chaine = "la valeur de mon nombre est de " + nbr + ".\n\napres 2 retours \u00E0 
 console.log(chaine);
 // Array
 var tableauNbr = [1, 2, 3];
-var tab = [1, 2, 3];
+var tab = [1, 2, 3, "hello"];
 tab[0] = 5;
 console.log(tab[0]);
 // Tuple

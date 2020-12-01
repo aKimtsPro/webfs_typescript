@@ -1,0 +1,5 @@
+tsc src/7_fichier_d_ts/test.js 
+--declaration           // recupère les .d.ts en plus
+--allowJs               // compile le js
+--emitDeclarationOnly   // ne récupère QUE les .d.ts
+--outDir dist/types     // donne le chemin dans lequel mettre le résultat

@@ -13,8 +13,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var Employe = /** @class */ (function () {
     function Employe( /*nom:string, age:number, num_nat:number, salaire:number*/) {
-        this._nom = "-";
-        this._age = 0;
+        this._age = 4;
         this._num_nat = 0;
         this._salaire = 0;
         // this._nom = nom;
@@ -41,7 +40,7 @@ var Employe = /** @class */ (function () {
     });
     Object.defineProperty(Employe.prototype, "nom", {
         get: function () {
-            return "this._nom";
+            return this._nom;
         },
         set: function (v) {
             this._nom = v;
